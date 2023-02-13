@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>View_Employee | qvantel</title>
-  <link rel="stylesheet" href="View_Employee.css">
-  <link rel="stylesheet" href="Home.css">
+  <link rel="stylesheet" href="{% static 'css/View_Employee.css' %}">
+  <link rel="stylesheet" href="{% static 'css/Home.css' %}">
 </head>
 
 
@@ -19,9 +20,9 @@
            qvantel
         </div>
         <div class="nav-items">
-           <li><a href="#">Home</a></li>
+           <li><a href=" ">Home</a></li>
            <li><a href="#">Add Employee</a></li>
-           <li><a href="#">View Employee Details</a></li>
+           <li><a href="view">View Employee Details</a></li>
         </div>
         <div class="search-icon">
            <span class="fas fa-search"></span>
@@ -47,28 +48,12 @@
 
       <tbody>
         <tr>
-          <td>1</td>
-          <td>Ravi Ranjan Prakash</td>
+          <td></td>
+          <td></td>
           <td><a href="#" class="btn">View</a></td>
         </tr>
 
-        <tr>
-          <td>2</td>
-          <td>Ram Sundar Singh</td>
-          <td><a href="#" class="btn">View</a></td>
-        </tr>
-
-        <tr>
-          <td>3</td>
-          <td>Rajiv Kumar Singh</td>
-          <td><a href="#" class="btn">View</a></td>
-        </tr>
-
-        <tr>
-          <td>4</td>
-          <td>Hetansh Kumar Singh</td>
-          <td><a href="#" class="btn">View</a></td>
-        </tr>
+        
 
 
 
