@@ -6,6 +6,18 @@ from django.db.models import Q
 
 
 # Create your views here.
+
+def all_emp(request):
+    emps = Employee.objects.all()
+    context = {
+        'emps': emps
+    }
+    print(context)
+    return render(request, 'view_all_emp.html', context)
+
+
+
+
 def add_emp(request):
     if request.method == 'POST':
         first_name = request.POST['first_name']
