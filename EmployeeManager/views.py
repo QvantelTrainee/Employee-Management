@@ -6,23 +6,18 @@ from django.db.models import Q
 
 
 # Create your views here.
-<<<<<<< HEAD
 def index(request):
     return render(request, 'Home.html' )
+
 def view(request):
     return render(request, 'View_Employee.html' )
-=======
 
 def all_emp(request):
     emps = Employee.objects.all()
     context = {
-        'emps': emps
-    }
+        'emps': emps}
     print(context)
     return render(request, 'view_all_emp.html', context)
-
-
-
 
 def add_emp(request):
     if request.method == 'POST':
@@ -64,4 +59,3 @@ def filter_emp(request):
     else:
         return HttpResponse('An Exception Occurred')
    
->>>>>>> 92feefcd5c21bf69d0c64030aa8f9bc8a0be4e50

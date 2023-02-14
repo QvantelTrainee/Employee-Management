@@ -21,7 +21,4 @@ urlpatterns = [
 
     path('', include('EmployeeManager.urls')),
 
-
-    path('', include('EmployeeManager.urls'))
-
 ]
