@@ -76,10 +76,15 @@ WSGI_APPLICATION = 'EmployeeManagement.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'postgres', 
+        'USER': 'postgres', 
+        'PASSWORD': 'EXCEPTION@1526!!99',
+        'HOST': 'db.xrkqnzuhfoowndbwzflg.supabase.co', 
+        'PORT': '5432',
     }
 }
+
 
 
 # Password validation
